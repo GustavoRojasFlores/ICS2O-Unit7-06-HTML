@@ -11,7 +11,7 @@ function startGame () {
       guess = parseInt(guess)
       if (guess !== myAge) {
         if (guess < myAge) {
-         alert('Your guess is less than my age! Try again.')
+          alert('Your guess is less than my age! Try again.')
         }
         if (guess > myAge) {
           alert('Your guess is bigger than my age! Try again.')
