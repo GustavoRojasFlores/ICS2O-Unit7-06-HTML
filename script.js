@@ -6,8 +6,9 @@ function startGame () {
   exit = false
   const myAge = Math.ceil(Math.random() * 20)
   while (guess !== myAge && !exit) {
-    guess = parseInt(prompt('Try to guess my age. Type `quit` to quit the game.'))
+    guess = prompt('Try to guess my age. Type `quit` to quit the game.')
     if (guess * 0 === 0) {
+      guess = parseInt(guess)
       if (guess !== myAge) {
         if (guess < myAge) {
          alert('Your guess is less than my age! Try again.')
@@ -20,7 +21,7 @@ function startGame () {
         alert('You got it right! Congratulations.')
         exit = true
       }
-    } else if (guess === 'quit') {
+    } else if (guess == 'quit') {
       exit = true
     } else {
       alert('That`s not a number, silly! Let`s try again.')
