@@ -21,7 +21,7 @@ function startGame () {
         alert('You got it right! Congratulations.')
         exit = true
       }
-    } else if (guess == 'quit') {
+    } else if (guess === 'quit') {
       exit = true
     } else {
       alert('That`s not a number, silly! Let`s try again.')
